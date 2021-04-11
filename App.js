@@ -13,7 +13,7 @@ import io from "socket.io-client";
 
 export default function App() {
   const [text, onChangeText] = useState("hello world");
-
+  console.log('hello world')
   useEffect(() => {
     const socketClient = io("https://deliverytracker.herokuapp.com/");
     socketClient.on("connect", () => {
